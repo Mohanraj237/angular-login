@@ -1,5 +1,5 @@
 <mat-toolbar color="Light">
-    <img class="header-logo"src="https://karunashraya.org/wp-content/uploads/2019/09/karunashraya-bangalore-hospice-trust.png" routerLink="login" alt="">
+    <img class="header-logo"src="https://karunashraya.org/wp-content/uploads/2019/09/karunashraya-bangalore-hospice-trust.png" routerLink="home" alt="">
      
     <ng-container *ngIf="authService.currentUser$ | async as user; else loginButton">
       <button mat-button (click)="logout()">

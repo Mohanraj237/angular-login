@@ -18,6 +18,13 @@ import { provideAuth,getAuth } from '@angular/fire/auth';
 import { HomeComponent } from './components/home/home.component';
 import { HotToastModule } from '@ngneat/hot-toast';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { provideDatabase,getDatabase } from '@angular/fire/database';
+
+
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireDatabaseModule} from '@angular/fire/compat/database'
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -39,7 +46,13 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
     HotToastModule.forRoot(),
-    NgbModule
+    NgbModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule,
+    provideDatabase(() => getDatabase()),
+    FlexLayoutModule,
+    MatCardModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,3 +1,4 @@
+import { RealtimeDatabaseService } from './services/realtime-database.service';
 import { AuthenticationService } from './services/authentication.service';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
@@ -11,7 +12,8 @@ import { Router } from '@angular/router';
 export class AppComponent {
   constructor(
     public authService: AuthenticationService,
-    private router: Router
+    private router: Router,
+    private service: RealtimeDatabaseService,
   ){
 
   }
@@ -19,5 +21,9 @@ export class AppComponent {
     this.authService.logout().subscribe(() => {
       this.router.navigate(['/']);
     });
+  }
+
+  ngOnInit() {
+    this.service.getImageDetailList();
   }
 }
