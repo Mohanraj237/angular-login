@@ -3,7 +3,10 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-
+.border{
+    border-radius: 10px;
+    border-color: none;
+}
 
 
 .header{
@@ -30,5 +33,17 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .margin-right{
     margin-right: 20px;
+}
+.margin-bottom{
+    margin-bottom: 16px;
+}
+
+.height{
+    height: 275px;
+    max-width: 100%;
+}
+
+.padding-top{
+    padding-top: 16px;
 }
 
