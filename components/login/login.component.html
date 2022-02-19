@@ -1,0 +1,30 @@
+<div class="login-container ">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://karunashraya.org/wp-content/uploads/2019/11/palliative-care-for-advanced-stage-cancer-patients-bangalore.jpg" alt="">
+        </div>
+    </div>
+    <div class="width margin-top center">
+    <div class="form-container ">
+        <form [formGroup]="loginForm"  (ngSubmit)="submit()">
+            <mat-form-field>
+                <input matInput placeholder="Email Address" formControlName="Email"/>
+                <mat-error *ngIf="Email?.errors?.['required']">Email is required</mat-error>
+            </mat-form-field>
+            
+            <mat-form-field>
+                <input matInput placeholder="Password" formControlName="Password" type="password"/>
+                <mat-error *ngIf="Password?.errors?.['required']">Password is required</mat-error>
+            </mat-form-field>
+            
+            <div class="center margin-right">
+                <button mat-raised-button color="primary" type="submit">Login</button>
+                <div class="center margin-left">
+                    <button mat-raised-button color="primary" type="submit" routerLink="/signup">Sign Up</button>
+                </div>
+            </div>
+            
+        </form>
+    </div>
+</div>
+</div>
