@@ -1,0 +1,29 @@
+{
+  "Card1" : {
+    "cards1" : {
+      "desc" : "Help!!",
+      "image" : "https://karunashraya.org/wp-content/uploads/2019/11/palliative-care-for-advanced-stage-cancer-patients-bangalore.jpg",
+      "url" : "https://milaap.org/fundraisers/support-mohd-sawood"
+    },
+    "cards2" : {
+      "desc" : "Cancer!!",
+      "image" : "https://karunashraya.org/wp-content/uploads/2019/11/palliative-care-for-advanced-stage-cancer-patients-bangalore.jpg",
+      "url" : "https://milaap.org/fundraisers/support-dinesh-purushothaman"
+    },
+    "cards3" : {
+      "desc" : "Card3 covid",
+      "image" : "https://karunashraya.org/wp-content/uploads/2019/11/indian_cancer_society_bangalore.jpg",
+      "url" : "https://milaap.org/fundraisers/support-daily-wagers-who-are-in-need-of-food-in-this-covid-situation"
+    },
+    "cards5" : {
+      "desc" : "card5",
+      "image" : "https://karunashraya.org/wp-content/uploads/2019/11/indian_cancer_society_bangalore.jpg",
+      "url" : "https://milaap.org/fundraisers/support-daily-wagers-who-are-in-need-of-food-in-this-covid-situation"
+    },
+    "cards6" : {
+      "desc" : "cards6",
+      "image" : "https://karunashraya.org/wp-content/uploads/2019/11/indian_cancer_society_bangalore.jpg",
+      "url" : "https://milaap.org/fundraisers/support-daily-wagers-who-are-in-need-of-food-in-this-covid-situation"
+    }
+  }
+}
